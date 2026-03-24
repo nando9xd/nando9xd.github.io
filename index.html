@@ -4,11 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio — Derianto Bure Junior Atakari</title>
+    <link rel="shortcut icon" href="icon.jpeg" type="image/x-icon" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
     <style>
       *,
       *::before,
@@ -312,6 +319,9 @@
         color: var(--muted);
         animation: float 3s ease-in-out infinite;
         z-index: 10;
+        display: flex;
+        align-items: center;
+        gap: 6px;
       }
       .float-tag:nth-child(1) {
         top: 10%;
@@ -752,7 +762,7 @@
         width: 36px;
         height: 36px;
         background: rgba(200, 245, 70, 0.1);
-        border-radius: 8px;
+        border-radius: 50%; /* INI DIUBAH MENJADI BULAT SEMPURNA */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -930,14 +940,20 @@
               deploy, satu baris kode dalam satu waktu.
             </p>
             <div class="hero-btns">
-              <a href="#" class="btn btn-primary">↓ Download CV</a>
               <a href="#contact" class="btn btn-outline">Kontak Saya →</a>
             </div>
           </div>
           <div class="hero-visual">
-            <div class="float-tag">React.js ⚛</div>
-            <div class="float-tag">Laravel 🔥</div>
-            <div class="float-tag">UI/UX 🎨</div>
+            <div class="float-tag">
+              <i class="fa-brands fa-react"></i> React.js
+            </div>
+            <div class="float-tag">
+              <i class="fa-brands fa-laravel" style="color: #ff2d20"></i>
+              Laravel
+            </div>
+            <div class="float-tag">
+              <i class="fa-solid fa-palette"></i> UI/UX
+            </div>
             <div class="hero-card">
               <div class="hero-avatar">
                 <img src="profil_saya.jpeg" alt="Foto Derianto" />
@@ -1189,7 +1205,7 @@
               </div>
               <div class="project-links">
                 <a
-                  href="https://rosaa-laundry.free.nf/pelanggan/index.php"
+                  href="https://rosaa-laundry.free.nf/pelanggan/loginpelanggan.php"
                   class="project-link"
                   target="_blank"
                   rel="noopener"
@@ -1254,7 +1270,9 @@
           <div>
             <div class="contact-links">
               <a href="mailto:deriantobure@gmail.com" class="contact-link">
-                <div class="contact-link-icon">✉</div>
+                <div class="contact-link-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
                 <div>
                   <div class="contact-link-text">deriantobure@gmail.com</div>
                   <div class="contact-link-label">Email</div>
@@ -1266,7 +1284,9 @@
                 target="_blank"
                 rel="noopener"
               >
-                <div class="contact-link-icon">💬</div>
+                <div class="contact-link-icon">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
                 <div>
                   <div class="contact-link-text">0821-4787-599</div>
                   <div class="contact-link-label">WhatsApp</div>
@@ -1279,7 +1299,9 @@
                 target="_blank"
                 rel="noopener"
               >
-                <div class="contact-link-icon">⌥</div>
+                <div class="contact-link-icon">
+                  <i class="fa-brands fa-github"></i>
+                </div>
                 <div>
                   <div class="contact-link-text">github.com/nando9xd</div>
                   <div class="contact-link-label">GitHub</div>
